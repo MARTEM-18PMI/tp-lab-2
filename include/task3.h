@@ -10,8 +10,3 @@ void map(T (&arr)[N], T (*change)(T))
 	}
 }
 
-template <typename T>
-T change(T element)
-{
-	return element * element;
-}

@@ -11,16 +11,3 @@ T* createArr(T(*gen)())
 	return arr;
 }
 
-template <typename T>
-T gen()
-{
-
-	return (T)1;
-}
-
-template <>
-
-char* gen()
-{
-	return (char *)"KOT";
-}

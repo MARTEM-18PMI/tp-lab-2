@@ -5,6 +5,20 @@ using namespace std;
 const size_t DIM = 5;
 const size_t DIM_STR = 10;
 
+template <typename T>
+T gen()
+{
+
+	return (T)1;
+}
+
+template <>
+
+char* gen()
+{
+	return (char *)"KOT";
+}
+
 int main() {
 	int* arr = createArr<int, DIM>(gen);
 	for (size_t i = 0; i < DIM; ++i) 

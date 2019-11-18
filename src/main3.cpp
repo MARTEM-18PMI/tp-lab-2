@@ -1,7 +1,11 @@
 #include<iostream>
 #include"task3.h"
 
-
+template <typename T>
+T change(T element)
+{
+	return element * element;
+}
 
 int main() {
 

@@ -1,6 +1,7 @@
 #include<iostream>
 #include "task1.h"
-#include "string.h"
+#include <cstring>
+
 using namespace std;
 const int DIM = 5;
 int main() {
@@ -45,6 +46,5 @@ int main() {
 		cout << dyn_arr_str[i] << ", ";
 	}
 	cout << dyn_arr_str[leng_str - 1] << ".\n";
-	system("pause");
 	return 0;
 }
