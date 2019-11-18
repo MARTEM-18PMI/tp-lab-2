@@ -59,7 +59,7 @@ template <typename T> void fnMerge(T * arr, int left_pos, int mid_pos, int right
 	delete[] right;
 }
 
-template <typename T> void msort(T * arr, int left_pos, int right_pos)
+template <typename T> void sort(T * arr, int left_pos, int right_pos)
 {
 	if (left_pos < right_pos)
 	{
@@ -69,10 +69,15 @@ template <typename T> void msort(T * arr, int left_pos, int right_pos)
 		else
 			m = 0;
 		int mid_pos = (left_pos + right_pos + m) / 2;
-		msort(arr, left_pos, mid_pos);
-		msort(arr, mid_pos + 1, right_pos);
+		sort(arr, left_pos, mid_pos);
+		sort(arr, mid_pos + 1, right_pos);
 		fnMerge(arr, left_pos, mid_pos, right_pos);
 	}
 
+}
+
+template <typename T> void msort(T * arr, int DIM)
+{
+	return sort(arr, 0, DIM - 1);
 }
 
