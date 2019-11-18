@@ -1,6 +1,6 @@
 #pragma once
 #include<iostream>
-#include<string>
+#include<cstring>
 using namespace std;
 
 template <typename T> bool compare(T left_el, T right_el)
